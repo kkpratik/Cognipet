@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		113AB25B21DB8E2F003D404A /* PetDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113AB25A21DB8E2F003D404A /* PetDetailsTableViewCell.swift */; };
+		116209FD21CC136400F573CD /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116209FC21CC136400F573CD /* APIManager.swift */; };
+		116209FF21CC13DF00F573CD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116209FE21CC13DF00F573CD /* User.swift */; };
+		118C7D6321B70932000D8828 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118C7D6221B70932000D8828 /* AppDelegate.swift */; };
+		118C7D6821B70932000D8828 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 118C7D6621B70932000D8828 /* Main.storyboard */; };
+		118C7D6A21B70934000D8828 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 118C7D6921B70934000D8828 /* Assets.xcassets */; };
+		118C7D6D21B70934000D8828 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 118C7D6B21B70934000D8828 /* LaunchScreen.storyboard */; };
+		119DD01321DE747B00738232 /* ActivityIndicatorHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119DD01221DE747B00738232 /* ActivityIndicatorHud.swift */; };
+		11A6EFF121CABB0B0032EC99 /* DSInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6EFF021CABB0B0032EC99 /* DSInventory.swift */; };
+		11A6EFF321CACCE20032EC99 /* DSPet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6EFF221CACCE20032EC99 /* DSPet.swift */; };
+		11A6EFF521CACF780032EC99 /* DSBaseUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6EFF421CACF780032EC99 /* DSBaseUser.swift */; };
+		11A6EFF721CACF8C0032EC99 /* DSPetLover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6EFF621CACF8C0032EC99 /* DSPetLover.swift */; };
+		11A6EFF921CACF9C0032EC99 /* DSPetBreeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6EFF821CACF9C0032EC99 /* DSPetBreeder.swift */; };
+		11A6EFFB21CACFBC0032EC99 /* DSInventories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6EFFA21CACFBC0032EC99 /* DSInventories.swift */; };
+		11A6EFFD21CACFCF0032EC99 /* DSPets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6EFFC21CACFCF0032EC99 /* DSPets.swift */; };
+		11C9507B21C4E8F800320115 /* ColorStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C9507421C4E8F800320115 /* ColorStack.swift */; };
+		11C9507C21C4E8F800320115 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C9507521C4E8F800320115 /* Constants.swift */; };
+		11C9507D21C4E8F800320115 /* UserString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C9507621C4E8F800320115 /* UserString.swift */; };
+		11C9507E21C4E8F800320115 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C9507721C4E8F800320115 /* Utilities.swift */; };
+		11C9507F21C4E8F800320115 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C9507921C4E8F800320115 /* SignUpViewController.swift */; };
+		11C9508021C4E8F800320115 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C9507A21C4E8F800320115 /* ViewController.swift */; };
+		11C9508421C4EB0700320115 /* BeginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C9508321C4EB0700320115 /* BeginViewController.swift */; };
+		11C9508621C5011F00320115 /* InventoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C9508521C5011F00320115 /* InventoriesViewController.swift */; };
+		11C9508821C5089A00320115 /* InventoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C9508721C5089900320115 /* InventoryTableViewCell.swift */; };
+		11E038F621DBF8B600AB3567 /* PetProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E038F521DBF8B600AB3567 /* PetProfileViewController.swift */; };
+		11E1EB6621C63525008C0EE4 /* AddInventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E1EB6521C63525008C0EE4 /* AddInventoryViewController.swift */; };
+		11E1EB6821C63778008C0EE4 /* InventoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E1EB6721C63778008C0EE4 /* InventoryDetailViewController.swift */; };
+		11E1EB6A21C63974008C0EE4 /* InventoryDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E1EB6921C63974008C0EE4 /* InventoryDetailCollectionViewCell.swift */; };
+		11E1EB6C21C65C5F008C0EE4 /* PetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E1EB6B21C65C5E008C0EE4 /* PetDetailViewController.swift */; };
+		91206B03220F4B5700AD8816 /* SelectPetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91206B02220F4B5700AD8816 /* SelectPetView.swift */; };
+		91206B08220F4BD900AD8816 /* SelectPetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91206B07220F4BD900AD8816 /* SelectPetView.xib */; };
+		914746F02210067300A4A0E6 /* AddPetDertailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914746EF2210067300A4A0E6 /* AddPetDertailsCell.swift */; };
+		914746F22210093C00A4A0E6 /* AddPetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914746F12210093C00A4A0E6 /* AddPetsViewController.swift */; };
+		91C93F6221F4E28300304CB8 /* FormDretailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C93F6121F4E28300304CB8 /* FormDretailsViewController.swift */; };
+		D48347715C53C30B231DA10A /* libPods-Cognipet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B868C78BAA5B070668E972B0 /* libPods-Cognipet.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		11264DFB21D937D300DA446C /* Cognipet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cognipet-Bridging-Header.h"; sourceTree = "<group>"; };
+		113AB25A21DB8E2F003D404A /* PetDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		116209FC21CC136400F573CD /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		116209FE21CC13DF00F573CD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		118C7D5F21B70932000D8828 /* Cognipet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cognipet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		118C7D6221B70932000D8828 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		118C7D6721B70932000D8828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		118C7D6921B70934000D8828 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		118C7D6C21B70934000D8828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		118C7D6E21B70934000D8828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		119DD01221DE747B00738232 /* ActivityIndicatorHud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorHud.swift; sourceTree = "<group>"; };
+		11A6EFF021CABB0B0032EC99 /* DSInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSInventory.swift; sourceTree = "<group>"; };
+		11A6EFF221CACCE20032EC99 /* DSPet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSPet.swift; sourceTree = "<group>"; };
+		11A6EFF421CACF780032EC99 /* DSBaseUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSBaseUser.swift; sourceTree = "<group>"; };
+		11A6EFF621CACF8C0032EC99 /* DSPetLover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSPetLover.swift; sourceTree = "<group>"; };
+		11A6EFF821CACF9C0032EC99 /* DSPetBreeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSPetBreeder.swift; sourceTree = "<group>"; };
+		11A6EFFA21CACFBC0032EC99 /* DSInventories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSInventories.swift; sourceTree = "<group>"; };
+		11A6EFFC21CACFCF0032EC99 /* DSPets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSPets.swift; sourceTree = "<group>"; };
+		11C9507421C4E8F800320115 /* ColorStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorStack.swift; sourceTree = "<group>"; };
+		11C9507521C4E8F800320115 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		11C9507621C4E8F800320115 /* UserString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserString.swift; sourceTree = "<group>"; };
+		11C9507721C4E8F800320115 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		11C9507921C4E8F800320115 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		11C9507A21C4E8F800320115 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		11C9508321C4EB0700320115 /* BeginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginViewController.swift; sourceTree = "<group>"; };
+		11C9508521C5011F00320115 /* InventoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoriesViewController.swift; sourceTree = "<group>"; };
+		11C9508721C5089900320115 /* InventoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryTableViewCell.swift; sourceTree = "<group>"; };
+		11E038F521DBF8B600AB3567 /* PetProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetProfileViewController.swift; sourceTree = "<group>"; };
+		11E1EB6521C63525008C0EE4 /* AddInventoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInventoryViewController.swift; sourceTree = "<group>"; };
+		11E1EB6721C63778008C0EE4 /* InventoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryDetailViewController.swift; sourceTree = "<group>"; };
+		11E1EB6921C63974008C0EE4 /* InventoryDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		11E1EB6B21C65C5E008C0EE4 /* PetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailViewController.swift; sourceTree = "<group>"; };
+		3CA374A38ADD29BB7411560D /* Pods-Cognipet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognipet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cognipet/Pods-Cognipet.debug.xcconfig"; sourceTree = "<group>"; };
+		91206B02220F4B5700AD8816 /* SelectPetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPetView.swift; sourceTree = "<group>"; };
+		91206B07220F4BD900AD8816 /* SelectPetView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectPetView.xib; sourceTree = "<group>"; };
+		914746EF2210067300A4A0E6 /* AddPetDertailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPetDertailsCell.swift; sourceTree = "<group>"; };
+		914746F12210093C00A4A0E6 /* AddPetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPetsViewController.swift; sourceTree = "<group>"; };
+		91C93F6121F4E28300304CB8 /* FormDretailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormDretailsViewController.swift; sourceTree = "<group>"; };
+		A65487BBFD845D355A386A9E /* Pods-Cognipet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cognipet.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cognipet/Pods-Cognipet.release.xcconfig"; sourceTree = "<group>"; };
+		B868C78BAA5B070668E972B0 /* libPods-Cognipet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cognipet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		118C7D5C21B70932000D8828 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48347715C53C30B231DA10A /* libPods-Cognipet.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		116209FA21CC136400F573CD /* Singleton classes */ = {
+			isa = PBXGroup;
+			children = (
+				116209FE21CC13DF00F573CD /* User.swift */,
+			);
+			path = "Singleton classes";
+			sourceTree = "<group>";
+		};
+		116209FB21CC136400F573CD /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				116209FC21CC136400F573CD /* APIManager.swift */,
+			);
+			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		118C7D5621B70931000D8828 = {
+			isa = PBXGroup;
+			children = (
+				118C7D6121B70932000D8828 /* Cognipet */,
+				118C7D6021B70932000D8828 /* Products */,
+				BC6AA45E87CE870AC967FCBB /* Pods */,
+				C876090A0361E3D30EC9618B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		118C7D6021B70932000D8828 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				118C7D5F21B70932000D8828 /* Cognipet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		118C7D6121B70932000D8828 /* Cognipet */ = {
+			isa = PBXGroup;
+			children = (
+				11C9507021C4E8F800320115 /* Classes */,
+				118C7D6221B70932000D8828 /* AppDelegate.swift */,
+				118C7D6621B70932000D8828 /* Main.storyboard */,
+				118C7D6921B70934000D8828 /* Assets.xcassets */,
+				118C7D6B21B70934000D8828 /* LaunchScreen.storyboard */,
+				118C7D6E21B70934000D8828 /* Info.plist */,
+			);
+			path = Cognipet;
+			sourceTree = "<group>";
+		};
+		119DD00F21DE722E00738232 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				119DD01221DE747B00738232 /* ActivityIndicatorHud.swift */,
+				91206B02220F4B5700AD8816 /* SelectPetView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		11A6EFEF21CAB9000032EC99 /* Data Structure */ = {
+			isa = PBXGroup;
+			children = (
+				11A6EFF021CABB0B0032EC99 /* DSInventory.swift */,
+				11A6EFF221CACCE20032EC99 /* DSPet.swift */,
+				11A6EFF421CACF780032EC99 /* DSBaseUser.swift */,
+				11A6EFF621CACF8C0032EC99 /* DSPetLover.swift */,
+				11A6EFF821CACF9C0032EC99 /* DSPetBreeder.swift */,
+				11A6EFFA21CACFBC0032EC99 /* DSInventories.swift */,
+				11A6EFFC21CACFCF0032EC99 /* DSPets.swift */,
+			);
+			path = "Data Structure";
+			sourceTree = "<group>";
+		};
+		11C9507021C4E8F800320115 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				91206B06220F4BB800AD8816 /* Xibs */,
+				119DD00F21DE722E00738232 /* Views */,
+				116209FB21CC136400F573CD /* Network Layer */,
+				116209FA21CC136400F573CD /* Singleton classes */,
+				11A6EFEF21CAB9000032EC99 /* Data Structure */,
+				11C9507121C4E8F800320115 /* Custome Cells */,
+				11C9507221C4E8F800320115 /* Extrnal Library */,
+				11C9507321C4E8F800320115 /* Utilities */,
+				11C9507821C4E8F800320115 /* ViewControllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		11C9507121C4E8F800320115 /* Custome Cells */ = {
+			isa = PBXGroup;
+			children = (
+				11C9508721C5089900320115 /* InventoryTableViewCell.swift */,
+				11E1EB6921C63974008C0EE4 /* InventoryDetailCollectionViewCell.swift */,
+				113AB25A21DB8E2F003D404A /* PetDetailsTableViewCell.swift */,
+				914746EF2210067300A4A0E6 /* AddPetDertailsCell.swift */,
+			);
+			path = "Custome Cells";
+			sourceTree = "<group>";
+		};
+		11C9507221C4E8F800320115 /* Extrnal Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Extrnal Library";
+			sourceTree = "<group>";
+		};
+		11C9507321C4E8F800320115 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				11C9507421C4E8F800320115 /* ColorStack.swift */,
+				11C9507521C4E8F800320115 /* Constants.swift */,
+				11C9507621C4E8F800320115 /* UserString.swift */,
+				11C9507721C4E8F800320115 /* Utilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		11C9507821C4E8F800320115 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				11264DFB21D937D300DA446C /* Cognipet-Bridging-Header.h */,
+				11C9507921C4E8F800320115 /* SignUpViewController.swift */,
+				11C9507A21C4E8F800320115 /* ViewController.swift */,
+				11C9508321C4EB0700320115 /* BeginViewController.swift */,
+				11C9508521C5011F00320115 /* InventoriesViewController.swift */,
+				11E1EB6521C63525008C0EE4 /* AddInventoryViewController.swift */,
+				11E1EB6721C63778008C0EE4 /* InventoryDetailViewController.swift */,
+				11E1EB6B21C65C5E008C0EE4 /* PetDetailViewController.swift */,
+				11E038F521DBF8B600AB3567 /* PetProfileViewController.swift */,
+				91C93F6121F4E28300304CB8 /* FormDretailsViewController.swift */,
+				914746F12210093C00A4A0E6 /* AddPetsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		91206B06220F4BB800AD8816 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				91206B07220F4BD900AD8816 /* SelectPetView.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		BC6AA45E87CE870AC967FCBB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CA374A38ADD29BB7411560D /* Pods-Cognipet.debug.xcconfig */,
+				A65487BBFD845D355A386A9E /* Pods-Cognipet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C876090A0361E3D30EC9618B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B868C78BAA5B070668E972B0 /* libPods-Cognipet.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		118C7D5E21B70932000D8828 /* Cognipet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 118C7D7121B70934000D8828 /* Build configuration list for PBXNativeTarget "Cognipet" */;
+			buildPhases = (
+				EB61111FB5F17376EA25BACB /* [CP] Check Pods Manifest.lock */,
+				118C7D5B21B70932000D8828 /* Sources */,
+				118C7D5C21B70932000D8828 /* Frameworks */,
+				118C7D5D21B70932000D8828 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cognipet;
+			productName = Cognipet;
+			productReference = 118C7D5F21B70932000D8828 /* Cognipet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		118C7D5721B70931000D8828 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "SS Incorporation";
+				TargetAttributes = {
+					118C7D5E21B70932000D8828 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+					};
+				};
+			};
+			buildConfigurationList = 118C7D5A21B70931000D8828 /* Build configuration list for PBXProject "Cognipet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 118C7D5621B70931000D8828;
+			productRefGroup = 118C7D6021B70932000D8828 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				118C7D5E21B70932000D8828 /* Cognipet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		118C7D5D21B70932000D8828 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				118C7D6D21B70934000D8828 /* LaunchScreen.storyboard in Resources */,
+				118C7D6A21B70934000D8828 /* Assets.xcassets in Resources */,
+				91206B08220F4BD900AD8816 /* SelectPetView.xib in Resources */,
+				118C7D6821B70932000D8828 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EB61111FB5F17376EA25BACB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cognipet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		118C7D5B21B70932000D8828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11A6EFFB21CACFBC0032EC99 /* DSInventories.swift in Sources */,
+				11C9508421C4EB0700320115 /* BeginViewController.swift in Sources */,
+				11A6EFF121CABB0B0032EC99 /* DSInventory.swift in Sources */,
+				11C9508621C5011F00320115 /* InventoriesViewController.swift in Sources */,
+				116209FD21CC136400F573CD /* APIManager.swift in Sources */,
+				11E1EB6821C63778008C0EE4 /* InventoryDetailViewController.swift in Sources */,
+				914746F02210067300A4A0E6 /* AddPetDertailsCell.swift in Sources */,
+				119DD01321DE747B00738232 /* ActivityIndicatorHud.swift in Sources */,
+				11E038F621DBF8B600AB3567 /* PetProfileViewController.swift in Sources */,
+				11C9508821C5089A00320115 /* InventoryTableViewCell.swift in Sources */,
+				11C9507B21C4E8F800320115 /* ColorStack.swift in Sources */,
+				11A6EFF921CACF9C0032EC99 /* DSPetBreeder.swift in Sources */,
+				11C9507E21C4E8F800320115 /* Utilities.swift in Sources */,
+				11A6EFF321CACCE20032EC99 /* DSPet.swift in Sources */,
+				118C7D6321B70932000D8828 /* AppDelegate.swift in Sources */,
+				11E1EB6A21C63974008C0EE4 /* InventoryDetailCollectionViewCell.swift in Sources */,
+				11A6EFF521CACF780032EC99 /* DSBaseUser.swift in Sources */,
+				11C9507F21C4E8F800320115 /* SignUpViewController.swift in Sources */,
+				914746F22210093C00A4A0E6 /* AddPetsViewController.swift in Sources */,
+				11C9508021C4E8F800320115 /* ViewController.swift in Sources */,
+				11E1EB6621C63525008C0EE4 /* AddInventoryViewController.swift in Sources */,
+				11E1EB6C21C65C5F008C0EE4 /* PetDetailViewController.swift in Sources */,
+				91C93F6221F4E28300304CB8 /* FormDretailsViewController.swift in Sources */,
+				113AB25B21DB8E2F003D404A /* PetDetailsTableViewCell.swift in Sources */,
+				91206B03220F4B5700AD8816 /* SelectPetView.swift in Sources */,
+				11C9507C21C4E8F800320115 /* Constants.swift in Sources */,
+				11C9507D21C4E8F800320115 /* UserString.swift in Sources */,
+				11A6EFFD21CACFCF0032EC99 /* DSPets.swift in Sources */,
+				11A6EFF721CACF8C0032EC99 /* DSPetLover.swift in Sources */,
+				116209FF21CC13DF00F573CD /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		118C7D6621B70932000D8828 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				118C7D6721B70932000D8828 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		118C7D6B21B70934000D8828 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				118C7D6C21B70934000D8828 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		118C7D6F21B70934000D8828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		118C7D7021B70934000D8828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		118C7D7221B70934000D8828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CA374A38ADD29BB7411560D /* Pods-Cognipet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y3L537946U;
+				INFOPLIST_FILE = Cognipet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.infotrupe.Cognipet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cognipet/Classes/ViewControllers/Cognipet-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		118C7D7321B70934000D8828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A65487BBFD845D355A386A9E /* Pods-Cognipet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y3L537946U;
+				INFOPLIST_FILE = Cognipet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.infotrupe.Cognipet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cognipet/Classes/ViewControllers/Cognipet-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		118C7D5A21B70931000D8828 /* Build configuration list for PBXProject "Cognipet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				118C7D6F21B70934000D8828 /* Debug */,
+				118C7D7021B70934000D8828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		118C7D7121B70934000D8828 /* Build configuration list for PBXNativeTarget "Cognipet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				118C7D7221B70934000D8828 /* Debug */,
+				118C7D7321B70934000D8828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 118C7D5721B70931000D8828 /* Project object */;
+}
